@@ -301,7 +301,7 @@ const PanelESchemes = () => {
 
               {editingScheme?.coverImage && (
                 <a
-                  href={`http://localhost:4000/${editingScheme.coverImage}`}
+                  href={`${process.env.REACT_APP_API_URL}/${editingScheme.coverImage}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-indigo-400 text-sm underline"

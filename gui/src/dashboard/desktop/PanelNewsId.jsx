@@ -33,7 +33,7 @@ const PanelNewsId = () => {
       <div className="max-w-4xl mx-auto">
 
         <img
-          src={`http://localhost:4000/${selectedNews.coverImage}`}
+          src={`${process.env.REACT_APP_API_URL}/${selectedNews.coverImage}`}
           alt={selectedNews.title}
           className="w-full h-150 object-contain rounded-2xl mb-6" // previous: object-cover, h-100
         />

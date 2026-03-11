@@ -38,7 +38,7 @@ const PanelEBookId = () => {
         {/* Cover Image */}
         {selectedBook.coverImage && ( 
             <div className="flex justify-center mb-8"> 
-            <img src={`http://localhost:4000/${selectedBook.coverImage}`} 
+            <img src={`${process.env.REACT_APP_API_URL}/${selectedBook.coverImage}`} 
             alt={selectedBook.title} 
             className="w-64 h-105 object-cover rounded-xl shadow-lg border border-zinc-800" /> 
             </div> )}

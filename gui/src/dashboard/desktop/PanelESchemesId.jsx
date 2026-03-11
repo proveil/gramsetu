@@ -40,7 +40,7 @@ const PanelESchemesId = () => {
 
         {/* Cover */}
         <img
-          src={`http://localhost:4000/${selectedScheme.coverImage}`}
+          src={`${process.env.REACT_APP_API_URL}/${selectedScheme.coverImage}`}
           alt={selectedScheme.title}
           className="w-full h-100 object-cover rounded-2xl mb-6"
         />

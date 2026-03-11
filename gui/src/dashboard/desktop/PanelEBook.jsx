@@ -133,7 +133,7 @@ const PanelEBook = () => {
 
               {book.coverImage ? (
                 <img
-                  src={`http://localhost:4000/${book.coverImage}`}
+                  src={`${process.env.REACT_APP_API_URL}/${book.coverImage}`}
                   alt={book.title}
                   className="w-full h-full object-cover"
                 />
