@@ -46,6 +46,14 @@ app.use("/api/gov-schemes",GSchemeRoute);
 app.use("/api/eschemes",ESchemeRoute);
 app.use("/api/tutorials",TutorialRoute);
 
+app.get("/ping", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    message: "Server alive",
+    time: new Date()
+  });
+});
+
 
 
 app.use((req, res) => {
