@@ -124,7 +124,7 @@ const PanelVideoGuide = () => {
 
               {tutorial.videoCover ? (
                 <img
-                  src={`${process.env.REACT_APP_API_URL}/${tutorial.videoCover}`}
+                  src={`${import.meta.env.VITE_API_URL}/${tutorial.videoCover}`}
                   alt={tutorial.title}
                   className="w-full h-full object-cover"
                 />

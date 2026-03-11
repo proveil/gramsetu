@@ -125,7 +125,7 @@ const PanelNews = () => {
           >
 
             <img
-              src={`${process.env.REACT_APP_API_URL}/${item.coverImage}`}
+              src={`${import.meta.env.VITE_API_URL}/${item.coverImage}`}
               alt={item.title}
               className="w-full h-48 object-cover"
             />

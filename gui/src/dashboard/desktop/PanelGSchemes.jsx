@@ -297,7 +297,7 @@ const PanelGSchemes = () => {
 
               {editingScheme?.coverImage && (
                 <a
-                  href={`${process.env.REACT_APP_API_URL}/${editingScheme.coverImage}`}
+                  href={`${import.meta.env.VITE_API_URL}/${editingScheme.coverImage}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-indigo-400 text-sm underline"
