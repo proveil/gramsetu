@@ -31,7 +31,7 @@ app.use(
   express.static(path.join(process.cwd(), "..", "storage"))
 );
 
-app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static(path.join(process.cwd(), "../gui/dist")));
 
 app.use(cors(corsOptions));
 
@@ -49,7 +49,7 @@ app.use("/api/tutorials",TutorialRoute);
 
 
 app.use((req, res) => {
-  res.sendFile(path.join(process.cwd(), "dist", "index.html"));
+  res.sendFile(path.join(process.cwd(), "../gui/dist/index.html"));
 });
 app.listen(PORT, async ()=>{
     FancyText();
