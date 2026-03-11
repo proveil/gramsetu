@@ -40,7 +40,7 @@ const PanelGSchemeId = () => {
 
         {/* Cover */}
         <img
-          src={`${import.meta.env.VITE_API_URL}/${selectedScheme.coverImage}`}
+          src={`/${selectedScheme.coverImage}`}
           alt={selectedScheme.title}
           className="w-full h-100 object-cover rounded-2xl mb-6"
         />

@@ -134,7 +134,7 @@ const PanelESchemes = () => {
 
               {scheme.coverImage ? (
                 <img
-                  src={`${import.meta.env.VITE_API_URL}/${scheme.coverImage}`}
+                  src={`/${scheme.coverImage}`}
                   alt={scheme.title}
                   className="w-full h-full object-cover"
                 />

@@ -38,7 +38,7 @@ const PanelEBookId = () => {
         {/* Cover Image */}
         {selectedBook.coverImage && ( 
             <div className="flex justify-center mb-8"> 
-            <img src={`${import.meta.env.VITE_API_URL}/${selectedBook.coverImage}`} 
+            <img src={`/${selectedBook.coverImage}`} 
             alt={selectedBook.title} 
             className="w-64 h-105 object-cover rounded-xl shadow-lg border border-zinc-800" /> 
             </div> )}
